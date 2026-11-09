@@ -8,6 +8,8 @@
   <meta name="description"
     content="Discover seasonal dining at Red Chili. Explore thoughtfully crafted dishes, warm hospitality, and memorable moments around the table." />
   <title>Red Chili — The Art of Fine Dining</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Forum&display=swap"
@@ -20,7 +22,7 @@
 </head>
 
 <body>
-  <div class="topbar">
+  <div class="topbar" data-aos="fade-down">
     <div class="container topbar-inner">
       <span><i class="pin">⌖</i> Restaurant St, Delicious City, 9578</span>
       <span class="topbar-center">Daily: 8:00 am – 10:00 pm</span>
@@ -29,7 +31,7 @@
     </div>
   </div>
 
-  <header class="header" id="top">
+  <header class="header" id="top" data-aos="fade-down">
     <div class="container nav-wrap">
       <a class="logo" href="#top" aria-label="Red Chili home">Red Chili<span>✦</span></a>
       <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"
@@ -46,8 +48,8 @@
   </header>
 
   <main>
-    <section class="hero" aria-label="Welcome to Red Chili">
-      <div class="swiper hero-swiper" aria-label="Restaurant highlights">
+    <section class="hero" aria-label="Welcome to Red Chili" data-aos="fade-up">
+      <div class="swiper hero-swiper" aria-label="Restaurant highlights" >
         <div class="swiper-wrapper">
           <div class="swiper-slide hero-slide hero-slide-one">
             <div class="hero-shade"></div>
@@ -84,17 +86,17 @@
         </div>
       </div>
       <!-- <button class="hero-nav hero-prev" type="button" aria-label="Previous slide"></button>
-      <button class="hero-nav hero-next" type="button" aria-label="Next slide"></button> -->
-      <div class="hero-pagination" aria-label="Choose a slide"></div>
+      <button class="hero-nav hero-next" type="button" aria-label="Next slide"></button>
+      <div class="hero-pagination" aria-label="Choose a slide"></div> -->
       <a class="scroll-cue" href="#story"><span class="scroll-line"></span> SCROLL TO DISCOVER</a>
       <div class="hero-side"><span>FRESH INGREDIENTS</span><b>✦</b><span>TIMELESS FLAVOUR</span></div>
     </section>
 
-    <section class="features section-dark">
+    <section class="features section-dark" data-aos="fade-up">
       <div class="container feature-grid">
         <article class="feature-card">
           <div class="feature-image"><img
-              src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=85"
+              src="./assists/Seasonal & Fresh.avif"
               alt="Fresh seasonal salad" loading="lazy"></div>
           <div class="feature-icon">♧</div>
           <h3>Seasonal & Fresh</h3>
@@ -103,7 +105,7 @@
         </article>
         <article class="feature-card feature-card-raised">
           <div class="feature-image"><img
-              src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=700&q=85"
+              src="./assists/Warm Hospitality.avif"
               alt="Elegant restaurant dining room" loading="lazy"></div>
           <div class="feature-icon">♨</div>
           <h3>Warm Hospitality</h3>
@@ -112,7 +114,7 @@
         </article>
         <article class="feature-card">
           <div class="feature-image"><img
-              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D?auto=format&fit=crop&w=700&q=85"
+              src="./assists//Made With Passion.avif"
               alt="Chef preparing a fine dining dish" loading="lazy"></div>
           <div class="feature-icon">✧</div>
           <h3>Made With Passion</h3>
@@ -122,18 +124,18 @@
       </div>
     </section>
 
-    <section class="story section-dark" id="story">
+    <section class="story section-dark" id="story" data-aos="fade-up">
       <div class="story-decor decor-one">✦</div>
       <div class="story-decor decor-two">✧</div>
       <div class="container story-grid">
         <div class="story-visual">
           <img class="story-main"
-            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=90"
+            src="./assists//Our story 1.avif"
             alt="A beautifully plated dinner at Red Chili" loading="lazy">
           <div class="story-stamp"><span>EST.</span><strong>2012</strong><small>GOOD FOOD<br>GOOD COMPANY</small><span
               class="stamp-orbit" aria-hidden="true"></span></div>
           <img class="story-small"
-            src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=500&q=85"
+            src="./assists/Our Story 2.avif"
             alt="Freshly prepared ingredients" loading="lazy">
         </div>
         <div class="story-copy">
@@ -151,7 +153,7 @@
       </div>
     </section>
 
-    <section class="menu-section" id="menu">
+    <section class="menu-section" id="menu" data-aos="fade-up">
       <div class="menu-backdrop"></div>
       <div class="container menu-inner">
         <div class="section-heading">
@@ -168,7 +170,7 @@
         </div>
         <div class="menu-grid">
           <article class="dish" data-category="starters"><img
-              src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=400&q=85"
+              src="./assists/Menu 1.avif"
               alt="Garden greens" loading="lazy">
             <div class="dish-info">
               <div class="dish-title">
@@ -178,7 +180,7 @@
             </div>
           </article>
           <article class="dish" data-category="mains"><img
-              src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=400&q=85"
+              src="./assists//Menu 2.avif"
               alt="Chef's seasonal plate" loading="lazy">
             <div class="dish-info">
               <div class="dish-title">
@@ -188,7 +190,7 @@
             </div>
           </article>
           <article class="dish" data-category="mains"><img
-              src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=400&q=85"
+              src="./assists//Menu 3.avif"
               alt="Grilled signature steak" loading="lazy">
             <div class="dish-info">
               <div class="dish-title">
@@ -198,7 +200,7 @@
             </div>
           </article>
           <article class="dish" data-category="starters"><img
-              src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?auto=format&fit=crop&w=400&q=85"
+              src="./assists//Menu 4.avif"
               alt="Fresh bruschetta" loading="lazy">
             <div class="dish-info">
               <div class="dish-title">
@@ -208,7 +210,7 @@
             </div>
           </article>
           <article class="dish" data-category="desserts"><img
-              src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=400&q=85"
+              src="./assists/Menu 5.avif"
               alt="Creamy tiramisu dessert" loading="lazy">
             <div class="dish-info">
               <div class="dish-title">
@@ -218,7 +220,7 @@
             </div>
           </article>
           <article class="dish" data-category="mains"><img
-              src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=400&q=85"
+              src="./assists//Menu 6.avif"
               alt="Fresh pasta with herbs" loading="lazy">
             <div class="dish-info">
               <div class="dish-title">
@@ -234,7 +236,7 @@
       </div>
     </section>
 
-    <section class="quote-band">
+    <section class="quote-band" data-aos="fade-up">
       <div class="quote-overlay"></div>
       <div class="container quote-content"><span class="quote-mark">“</span>
         <blockquote>Food is not just what we eat.<br>It's the moments we make around it.</blockquote>
@@ -243,7 +245,7 @@
       </div>
     </section>
 
-    <section class="chef-section section-dark" id="chefs">
+    <section class="chef-section section-dark" id="chefs" data-aos="fade-up">
       <div class="container chef-grid">
         <div class="chef-copy">
           <p class="eyebrow"><span class="ornament">✦</span> From our kitchen</p>
@@ -253,14 +255,14 @@
             class="text-link">COME TASTE THE DIFFERENCE <span>↗</span></a>
         </div>
         <div class="chef-image-wrap"><img
-            src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=900&q=90"
+            src="./assists//Chaef.avif"
             alt="Chef carefully plating a dish" loading="lazy">
           <div class="chef-caption"><span>THE ART OF COOKING</span><span>✦</span><span>THE JOY OF SHARING</span></div>
         </div>
       </div>
     </section>
 
-    <section class="reservation" id="reservation">
+    <section class="reservation" id="reservation" data-aos="fade-up">
       <div class="container reservation-grid">
         <div class="reservation-form-wrap">
           <p class="eyebrow"><span class="ornament">✦</span> Make it a moment</p>
@@ -319,7 +321,7 @@
     </section>
   </main>
 
-  <footer class="footer" id="contact">
+  <footer class="footer" id="contact" data-aos="fade-up">
     <div class="footer-bg"></div>
     <div class="container footer-content">
       <div class="footer-main">

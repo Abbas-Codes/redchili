@@ -1,4 +1,19 @@
 const heroSwiperElement = document.querySelector(".hero-swiper");
+if (window.AOS) {
+  window.AOS.init({
+    duration: 800,
+    easing: "ease-out-cubic",
+    once: true,
+    offset: 80,
+    disable: () => window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+  });
+} else {
+  console.error("AOS failed to load; scroll animations could not be initialized.");
+  document.querySelectorAll("[data-aos]").forEach((element) => {
+    element.removeAttribute("data-aos");
+  });
+}
+
 if (heroSwiperElement && window.Swiper) {
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   new window.Swiper(heroSwiperElement, {
@@ -21,6 +36,19 @@ if (heroSwiperElement && window.Swiper) {
       delay: 5500,
       disableOnInteraction: false,
       pauseOnMouseEnter: true,
+    },
+    on: {
+      init(swiper) {
+        const activeSlide = swiper.slides[swiper.activeIndex];
+        if (activeSlide) activeSlide.classList.add("hero-slide-zooming");
+      },
+      slideChangeTransitionStart(swiper) {
+        swiper.slides.forEach((slide) => slide.classList.remove("hero-slide-zooming"));
+      },
+      slideChangeTransitionEnd(swiper) {
+        const activeSlide = swiper.slides[swiper.activeIndex];
+        if (activeSlide) activeSlide.classList.add("hero-slide-zooming");
+      },
     },
     a11y: {
       prevSlideMessage: "Previous slide",
